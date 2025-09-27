@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <title>Formulir Penginputan Data Kematian</title>
+    </head>
+    <body class="bi">
+        <style>
+/* kode CSS untuk menata elemen */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #F5F5F5, #F2EAD3);
+    border-radius: 5px;
+}
+
+.fieldset-container {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.bi{
+    background-color: #000000;
+}
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+
+
+}
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+    input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0c6e10;
+}
+
+.error-message {
+	color: red;
+	font-size: 12px;
+	margin-top: 0px;
+}
+
+
+.logout {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.logout:hover{
+    background-color: #8b160e;
+}
+
+/* Gaya tambahan untuk elemen tertentu */
+.container img {
+    width: 200px;
+}
+
+.container center {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-top: 0px;
+}
+
+.form-group {
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 600px) {
+/* Gaya responsif untuk layar yang lebih kecil */
+    .container {
+    width: 100%;
+  }
+}
+
+        </style>
+        <div class="container">
+        <header>
+            <div><center><img src="logogaruda.png"></center>
+                <h1>
+                    <p>
+                        <center>REPUBLIK INDONESIA</center>
+                        <center>PENCATATAN SIPIL</center>
+                    </p>
+                    <br>
+                    <br>
+                   
+                        <center>KUTIPAN AKTA KEMATIAN</center>
+                        <center>--------------------------------------</center>
+                </h1>
+                <br>
+            </div>
+        </header>
+        <form method="POST" action="simpan.php">
+		<fieldset class="fieldset.container">
+            <legend><strong>DATA PELAPOR :</strong></legend>
+            <br>
+                <label for="no_nik">NOMOR INDUK KEPENDUDUKAN (NIK)</label>
+                <input type="text" name="no_nik" placeholder="Masukkan Nomor Induk Kependudukan (NIK)" required="required">
+            <br>
+            <br>
+            <label for="nama_p">NAMA</label>
+            <input type="text" name="nama_p" placeholder="Masukkan Nama Anda" required="required">
+            <br>
+            <br>
+                <label for="alamat_pel">ALAMAT PELAPOR</label>
+                <input type="text" name="alamat_pel" placeholder="Masukkan Alamat Anda" required="required">
+            <br>
+            <br>
+            <label for="hub">HUBUNGAN DENGAN TERLAPOR</label>
+                <input type="text" name="hub" placeholder="Hubungan dengan Terlapor" required="required">  
+            </select><br><br>
+		</fieldset>
+		<br>
+		
+        <fieldset class="fieldset.container">
+           <legend><strong>DATA ORANG YANG MENINGGAL :</strong></legend>
+            <br>
+                <label for="nama_m">NAMA</label>
+                <input type="text" name="nama_m" placeholder="Masukan Nama Orang yang Meninggal" required="required">
+            <br>
+            <br>
+            <label for="no_nik_m">NOMOR INDUK KEPENDUDUKAN (NIK)</label>
+            <input type="text" name="no_nik_m" placeholder="Masukkan Nomor Induk Kependudukan (NIK)" required="required">
+            <br>
+			
+			<br>
+            <label for="jeniskel">JENIS KELAMIN</label>
+            <input type="radio" name="jeniskel" value="Laki-Laki">Laki-Laki
+            <input type="radio" name="jeniskel" value="Perempuan">Perempuan
+            </select><br>
+			
+			<br>
+			<label for="agama">AGAMA</label>
+            <input type="radio" name="agama" value="Islam">Islam
+            <input type="radio" name="agama" value="Kristen">Kristen
+            <input type="radio" name="agama" value="Hindu">Hindu
+            <input type="radio" name="agama" value="Budha">Budha
+            <input type="radio" name="agama" value="Khonghucu">Khonghucu
+            <br><br>
+
+            <br>
+            <label for="tgl_kem">Masukkan Tanggal Kematian</label>
+            <input type="date" name="tgl_kem" placeholder="yyyy-mm-dd" required="required">
+            <br>
+            <br>
+                <label for="alamat_ter">ALAMAT</label>
+                <input type="text" name="alamat_ter" placeholder="Masukkan Alamat Terlapor" required="required">
+            <br>
+
+            <br>
+                <label for="rt">RT</label>
+                <input type="text" name="rt" placeholder="Masukkan RT" required="required">
+            <br>
+            <br>
+                <label for="rw">RW</label>
+                <input type="text" name="rw" placeholder="Masukkan RW" required="required">
+            <br>
+			
+            <br>
+            <label for="wkt_kem">Waktu Kematian</label>
+            <input type="time" name="wkt_kem" placeholder="Masukkan Waktu Kematian" required="required">
+			<p class="error-message">Waktu siang (am) : jam 00-12, contoh : 10.30 berarti jam setengah 11 siang.</p>
+            <p class="error-message">Waktu malam (pm) : jam 12-00, contoh : 14.30 berarti jam setengah 3 sore / malam.</p>
+			
+			<br>
+            <label for="tmp_kem">Tempat Kematian</label>
+            <input type="text" name="tmp_kem" placeholder="Masukkan Tempat Kematian" required="required">
+            <br>
+			<br>
+            <label for="pnyb_kem">Penyebab Kematian</label>
+            <input type="text" name="pnyb_kem" placeholder="Masukkan Penyebab Kematian" required="required">
+            <br>
+			<br>
+            <label for="lks_pem">Lokasi Pemakaman</label>
+            <input type="text" name="lks_pem" placeholder="Masukkan Lokasi Pemakaman" required="required">
+            <br>
+        </fieldset>
+		
+            <br>
+                <input type="submit" value="Selesai" class="btn">
+            <br>
+                <a href="tampilan.php" class="logout">Kembali Halaman Utama</a>
+        </form>
+        </div>
+    </body>
+</html>

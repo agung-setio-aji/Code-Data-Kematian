@@ -1,0 +1,191 @@
+/*ini adalah awal dari profil beranda*/
+  .k {
+	background-color: #4A55A2;
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 110%;
+	padding: 20px;
+  }
+
+  nav ul {  /*ini adalah untuk mengatur text bagian tombol*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	background-color: #7895CB;
+	color: #ffffff;
+	padding: 10px;
+  }
+  nav ul a:hover {
+    background-color: #add11c;
+  }
+
+  
+  nav ul li { /*ini adalah untuk mengatur text bagian tombol*/
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li a { /*ini adalah untuk mengatur text bagian tombol*/
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  
+section { /*ini adalah untuk mengatur area kosong isi konten profil*/
+	color: #7895CB;
+	margin: 20px;
+  }
+  
+  .hero { /*ini adalah desain gambar cover profil*/
+  background-image: url("logogaruda.png");
+	background-size: 100%;
+	background-color: #7895CB;
+	color: #000000;
+	text-align: center;
+	padding: 300px;
+  }
+
+  h2 { /*ini adalah text welcome profil*/
+	color: #000000;
+	position: absolute;
+    top: 24%;
+    left: 19%;
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  p { /*text profil*/
+	color: #000000;
+	position: absolute;
+    top: 37%;
+    left: 29%;
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  footer { /*ini adalah penanda tahun profil*/
+	background-color: #ffffff;
+	padding: 10px;
+	text-align: center;
+  }
+/*ini adalah akhir dari profil beranda*/
+
+
+/*ini adalah awal dari table tampilan*/
+
+/* Desain Modern untuk Table */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.un {
+    color: #333;
+    text-align: center;
+    font-size: 120%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #8AC6D1, #EAF5F5);
+    border-bottom: 2px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #A7EDE7;
+    color: #333;
+}
+
+/* Desain Button */
+button {
+    padding: 10px 20px;
+    background-color: #F45959;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #D64F4F;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #F8D864;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #F5C652;
+}
+
+.inp {
+    background-color: #5CE085;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.inp:hover {
+    background-color: #3FA56A;
+}
+  
+.inp:active {
+    background-color: #4CCB7B;
+}
+
+/* Desain untuk Tombol */
+.btn {
+    padding: 6px 12px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-warning {
+    background-color: #FFA03B;
+}
+
+.btn-warning:hover {
+    background-color: #FF8C00;
+}
+
+.btn-danger {
+    background-color: #FF5E5E;
+}
+
+.btn-danger:hover {
+    background-color: #FF3B3B;
+}
+
+
+
+/*ini adalah akhir dari table tampilan*/

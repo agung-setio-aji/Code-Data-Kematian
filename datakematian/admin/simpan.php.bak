@@ -1,0 +1,22 @@
+<?php
+include "koneksi.php";
+
+$q = "INSERT INTO penelitian SET ";
+$q .= "mengerti = '".$_POST['mengerti']."',";
+$q .= "email = '".$_POST['email']."',";
+$q .= "tahun_sekarang = ".$_POST['tahun_sekarang'].",";
+$q .= "kepada = '".$_POST['kepada']."',";
+$q .= "tempat_penelitian = '".$_POST['tempat_penelitian']."',";
+$q .= "nama = '".$_POST['nama']."',";
+$q .= "tempat_lahir = '".$_POST['tempat_lahir']."',";
+$q .= "tgl_lahir = '".$_POST['tgl_lahir']."',";
+$q .= "nim = '".$_POST['nim']."',";
+$q .= "fakultas = '".$_POST['fakultas']."',";
+$q .= "studi = '".$_POST['studi']."',";
+$q .= "judul_penelitian = '".$_POST['judul_penelitian']."'";
+$sql = mysqli_query($kon, $q);
+if( $sql )
+{
+    header('location:http://localhost/datakematiann/admin/tampilan.php');
+}
+?>

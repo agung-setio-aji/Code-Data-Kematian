@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        .container {
+          background-image: linear-gradient(to bottom, #45CFDD, #6527BE);
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .image-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .form-container {
+            background-repeat: no-repeat;
+	        background-size: cover;
+            background-color: #ffffff; 
+            border: 1px solid #ccc; 
+	        box-shadow: 0px 0px 10px #000000; 
+            border-radius: 5px; 
+            padding: 20px; 
+            width: 300px;
+            margin-left: 20px;
+        }
+        
+        .login-container:hover .image-container img {
+            opacity: 1;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        button[type="submit"] {
+            padding: 10px;
+            background-color: #433af1;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #43d11c;
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="login-container">
+        <div class="image-container">
+            <img src="Uniwara_2.png" alt="Login Image">
+        </div>
+        <div class="form-container">
+            <h1>Login</h1>
+            <form method="POST" action="index.html">
+                <table>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" name="username" placeholder="Masukkan Username" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" name="password" placeholder="Masukkan Password" required="required"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
